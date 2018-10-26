@@ -1,0 +1,85 @@
+\documentclass[10pt]{article}
+\usepackage{subfigure,psfrag,epsfig,graphics,url,amsmath,amssymb,fancyhdr,cite,color}
+\usepackage{multirow}
+\usepackage{palatino}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+ \usepackage[small,compact]{titlesec}
+
+\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0pt} \setlength{\evensidemargin}{1pt}
+\setlength{\oddsidemargin}{1pt} \setlength{\headsep}{10pt}
+\setlength{\parskip}{0ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hyperref stuff
+
+%\usepackage[filecolor=black,citecolor=black,urlcolor=black,linkcolor=black,colorlinks,pdfpagelabels,pdfpagelayout=SinglePage,dvips]{hyperref}
+%\usepackage{backref}
+%\usepackage{breakurl}
+%\renewcommand{\url}{\burl}
+
+%% \renewcommand*{\backref}[1]{}
+%% \renewcommand*{\backrefalt}[4]{
+%%   \ifcase #1 %
+%%     (Not cited.) %
+%%   \or
+%%     {\small\sffamily (Cited on page~#2.)}%
+%%   \else
+%%     {\small\sffamily (Cited on pages~#2.)}%
+%%   \fi
+%% }
+%% \renewcommand*{\backrefsep}{, }
+%% \renewcommand*{\backreftwosep}{ and~}
+%% \renewcommand*{\backreflastsep}{ and~}
+
+\newcommand{\xxx}[1]{{\color{red} #1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newtheorem{definition}{Definition}
+\newtheorem{task}{Task}[section]
+\newtheorem{problem}{Problem}[section]
+
+\usepackage[pdftex,hyperref,svgnames]{xcolor}
+\colorlet{todo}{FireBrick} % FireBrick prints better than red
+\newenvironment{todolist}[1][]
+  {\color{todo}TODO: \em#1\begin{enumerate}}
+  {\end{enumerate}}
+\newcommand{\todo}[2][TODO]{\textcolor{todo}{[{\em #1: #2}]}}
+
+
+\begin{document}
+%\title{Title Here}
+\date{}
+%\maketitle
+%\pagebreak
+
+
+\newcommand{\eg}{{\it e.g.}}
+\newcommand{\ie}{{\it i.e.}}
+\newcommand{\etal}{{\it et al.}}
+\newcommand{\comment}[1]{}
+
+\newcommand{\fp}{\vspace*{0.06in}\noindent}
+\renewcommand{\b}{$\bullet$}
+\renewcommand{\paragraph}[1]{\fp {\bf #1}}
+
+
+
+\begin{sloppypar}
+\thispagestyle{empty}
+\input{summary}
+
+\pagebreak
+\thispagestyle{empty}
+\setcounter{page}{1}
+\input{introduction}
+
+\pagebreak
+\setcounter{page}{1}
+%\bibliographystyle{ieeetr}
+\bibliographystyle{abbrv}
+\bibliography{ref,rfc}
+
+\end{sloppypar}
+\end{document}
