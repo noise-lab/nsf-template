@@ -3,12 +3,12 @@
 \usepackage{multirow}
 \usepackage{palatino}
 \usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
- \usepackage[small,compact]{titlesec}
+\usepackage[small,compact]{titlesec}
+\usepackage[margin=1in]{geometry}
 
-\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
-\setlength{\topmargin}{0pt} \setlength{\evensidemargin}{1pt}
-\setlength{\oddsidemargin}{1pt} \setlength{\headsep}{10pt}
-\setlength{\parskip}{0ex}
+\titleformat{\section}
+  {\normalfont\fontsize{10}{10}\bfseries}{\thesection}{0.5em}{}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hyperref stuff
@@ -32,6 +32,7 @@
 %% \renewcommand*{\backreftwosep}{ and~}
 %% \renewcommand*{\backreflastsep}{ and~}
 
+\newcommand{\TITLE}{TITLE HERE}
 \newcommand{\xxx}[1]{{\color{red} #1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,39 +48,38 @@
   {\end{enumerate}}
 \newcommand{\todo}[2][TODO]{\textcolor{todo}{[{\em #1: #2}]}}
 
-
-\begin{document}
-%\title{Title Here}
-\date{}
-%\maketitle
-%\pagebreak
-
-
 \newcommand{\eg}{{\it e.g.}}
 \newcommand{\ie}{{\it i.e.}}
 \newcommand{\etal}{{\it et al.}}
 \newcommand{\comment}[1]{}
 
-\newcommand{\fp}{\vspace*{0.06in}\noindent}
+\newcommand{\fp}{\vspace*{0.03in}\noindent}
 \renewcommand{\b}{$\bullet$}
 \renewcommand{\paragraph}[1]{\fp {\bf #1}}
 
-
+\begin{document}
+\date{}
 
 \begin{sloppypar}
-\thispagestyle{empty}
+\pagestyle{empty}
 \input{summary}
-
 \pagebreak
-\thispagestyle{empty}
-\setcounter{page}{1}
+\setcounter{page}{0}
 \input{introduction}
 
 \pagebreak
 \setcounter{page}{1}
-%\bibliographystyle{ieeetr}
 \bibliographystyle{abbrv}
 \bibliography{ref,rfc}
+
+\pagebreak
+\setcounter{page}{1}
+\input{data-management}
+
+\pagebreak
+\setcounter{page}{1}
+\input{postdoc}
+
 
 \end{sloppypar}
 \end{document}

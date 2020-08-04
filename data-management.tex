@@ -1,0 +1,118 @@
+\begin{center}
+{\large \bf \TITLE}
+\end{center}
+
+\begin{center}
+    {\bf Data Management Plan}
+\end{center}
+
+Our proposed research, outreach, and educational activities may handle a
+variety of datasets and data models.  The data used in the project will be
+delineated between \emph{private data} that is unsuitable for any release and
+must be access-controlled (e.g.,personally-identifying information, as
+specified by an IRB, or private company data that is protected by NDA); and
+\emph{public data} that is already broadly available.
+
+\paragraph{Data Storage and Retention.} We will use the University of
+Chicago secure data enclave (\url{https://securedata.uchicago.edu}), which
+allows researchers to securely store and analyze sensitive research data
+according to various restrictions, including local, state, federal, and
+international laws. The facility provides best-in-class data security
+standards for the storage of sensitive data, as well as the ability to
+analyze sensitive data directly within the enclave, using software
+researchers install and co-located compute facilities, including the
+Research Computing Center's MidwayR computing cluster that is equipped
+with tools and software that provide compliance with state-of-the-art
+data protection.
+
+Data will be guaranteed to be stored for the lifetime of the proposed
+project, but in general we expect to store most data longer. Storage
+beyond the end of the project period will be at the data owner's (see
+below for definition) and data generator's discretion.
+
+We will use any standard collaboration/communication tools to transmit
+any data that can be released to those who request it. In general,
+private data will not be transferable from one site to another; if the
+need arises to transfer data between institutions, we will consult with
+our corresponding university IRBs and use suitable data protection
+mechanisms to transfer that data.
+
+\paragraph{Data Ownership}. We find it helpful to ensure that datasets
+always have a designated ``owner''. Although this person may or may
+not have been the generator of the data, they will be responsible for
+ensuring proper access control in the case of private data, facilitating
+timely responses to requests for releasable data, and for ensuring
+continued access for public
+data. The owner will be the co-PI or senior researcher most closely
+affiliated with the activity from which the data resulted. Should that
+co-PI leave their institution or be, for some other reason, unable to
+continue being owner of the data, they will either pass ownership to
+another co-PI for the project or to another senior researcher at their
+university.
+
+In cases of handling sensitive data from one of our partners, decisions
+regarding data management will be governed by corresponding negotiation
+of data use agreements with our corresponding universities. For example,
+the University of Chicago has a standard Data Use Agreement (DUA)
+template that is used for incoming and outgoing data and managed by the
+university research administration
+(\url{https://ura.uchicago.edu/page/data-sharing-agreements})
+to ensure that proper procedures and protocols are implemented for
+transferring and protecting sensitive data. A critical first step will
+be careful consultation with partners and other university officials
+(e.g., university IRBs, university research administration and contracts
+offices) regarding the data that will be shared, to inform policy about
+the status of the data.
+
+\paragraph{Primary Data.} This project will involve the collection and sharing
+of various data concerning Internet connectivity, uptake, and student
+engagement and achievement. When appropriate, and as described below, we aim
+to make these datasets available through the Chicago Data
+Portal~\cite{www-chicago-data}, in cooperation with our partners. In other
+cases---in particular, for individual-level student data from the Chicago Public
+Schools---certain sensitive data has been (or will be) shared under
+restrictive data use agreements and non-disclosure agreements and cannot be
+made public.  The datasets we plan to collect and/or analyze include the
+following:
+\begin{itemize}
+    \itemsep=-1pt
+    \item {\em Network performance data.} We will use existing tools and
+        software, including the BISmark network measurement suite to gather
+        continuous data about network performance, including throughput,
+        latency, packet loss, and home wireless network performance.  All
+        performance data will be made publicly available, except for any data
+        pertaining to specific devices in a house that could be linked to an
+        individual (e.g., IP addresses and hardware addresses will be
+        appropriately anonymized).
+    \item {\em Application quality data.} We will use the existing
+        NetMicroscope toolkit that we have developed to measure and infer
+        application quality and user experience for a broad array of
+        applications that Chicago Public School students depend on for online
+        learning. As with network performance data, and identifying
+        information, such as IP addresses and hardware addresses, will be
+        appropriately anonymized before public release.
+    \item {\em Application and Internet usage data.} Our ability to observe
+        traffic inside of the home makes it possible to gain insight into
+        Internet usage in the home, including what applications and services
+        were being used at what times. This data is of a more sensitive nature
+        and we do not plan to publicly release it in raw form. Rather, we will
+        release data including aggregate statistics that are derived from the
+        raw data, such as the breakdown of application and device usage across
+        all homes, the typical numbers of simultaneous Internet users in a
+        household, and so forth.
+\end{itemize}
+
+\paragraph{Other Data.} Several other kinds of data will be generated in the
+course of this project:
+
+\begin{itemize}
+\item
+  \emph{Source code}: We will make all source code open
+  source under a suitable nonrestrictive license.
+\item
+  \emph{Educational materials}: As discussed in the proposal, we plan to
+        create course modules and integrate these materials into both new an
+        existing courses. Whenever possible, we will release course
+        materials---lecture and assignment materials, videos, etc.---for other
+        educators to integrate into their own courses.
+\end{itemize}
