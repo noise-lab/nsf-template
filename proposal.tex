@@ -6,8 +6,8 @@
 \usepackage[small,compact]{titlesec}
 \usepackage[margin=1in]{geometry}
 
-\titleformat{\section}
-  {\normalfont\fontsize{10}{10}\bfseries}{\thesection}{0.5em}{}
+%\titleformat{\section}
+%  {\normalfont\fontsize{10}{10}\bfseries}{\thesection}{0.5em}{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,11 +61,15 @@
 \date{}
 
 \begin{sloppypar}
-\pagestyle{empty}
+\pagestyle{plain}
+\thispagestyle{empty}
 \input{summary}
 \pagebreak
 \setcounter{page}{0}
 \input{introduction}
+\input{outreach}
+\input{management}
+\input{prior}
 
 \pagebreak
 \setcounter{page}{1}

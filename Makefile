@@ -53,5 +53,5 @@ tidy:
 	rm -f *.dvi *.aux *.log *.blg *.bbl
 
 clean:
-	rm -f *~ *.dvi *.aux *.log *.blg *.bbl *.brf *.out $(REPORT).ps
+	rm -f *~ *.dvi *.aux *.log *.blg *.bbl *.brf *.out $(REPORT).ps $(REPORT).pdf
 
