@@ -22,6 +22,11 @@ This repository contains LaTeX templates for preparing NSF research proposals ac
   - Updated with current activities (AI & Tech Policy Pillar, IIRP Paris teaching, Forum on Free Expression)
 
 - **management.tex** - Management Plan and Timeline
+  - Includes Gantt chart figure reference
+
+- **gantt.tex** - Gantt chart timeline using pgfgantt package
+  - Template with example research themes, tasks, and evaluation activities
+  - Customize with project-specific tasks and timeline
 
 ### Supporting Documents
 
@@ -77,6 +82,8 @@ The following required NSF documents are **NOT** included in this template and m
 - [ ] Customize **outreach.tex** for your specific broader impacts activities (current version includes general boilerplate)
 
 - [ ] Update **management.tex** with project-specific timeline and management structure
+
+- [ ] Customize **gantt.tex** with your project tasks, themes, and timeline
 
 - [ ] Review and customize **data-management.tex** for your specific data types and sharing plans
 

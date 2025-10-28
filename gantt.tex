@@ -1,0 +1,62 @@
+\noindent\resizebox{\textwidth}{!}{
+\begin{ganttchart}[ hgrid, vgrid, time slot unit=month, x unit=.5cm,
+time slot format=isodate-yearmonth,
+bar/.append
+style={fill=gray!50},
+bar label font=\small\bfseries,
+group
+label
+font=\bfseries
+]{1-01}{3-12}
+
+% Title showing years
+\gantttitlecalendar{year,
+month=quarter}
+\\
+
+% Research Theme 1
+\ganttgroup{Research Theme 1: [THEME NAME]}{1-01}{2-06}
+\\
+
+% Task 1.1
+\ganttbar{Task 1.1: [TASK DESCRIPTION]}{1-01}{1-06}
+\\
+
+% Task 1.2
+\ganttbar{Task 1.2: [TASK DESCRIPTION]}{1-04}{1-12}
+\\
+
+% Task 1.3
+\ganttbar{Task 1.3: [TASK DESCRIPTION]}{1-09}{2-06}
+\\
+
+% Research Theme 2
+\ganttgroup{Research Theme 2: [THEME NAME]}{1-06}{3-12}
+\\
+
+% Task 2.1
+\ganttbar{Task 2.1: [TASK DESCRIPTION]}{1-06}{2-03}
+\\
+
+% Task 2.2
+\ganttbar{Task 2.2: [TASK DESCRIPTION]}{2-01}{2-12}
+\\
+
+% Task 2.3
+\ganttbar{Task 2.3: [TASK DESCRIPTION]}{2-06}{3-12}
+\\
+
+% Evaluation and Dissemination
+\ganttgroup{Evaluation and Dissemination}{1-01}{3-12}
+\\
+
+% Evaluation
+\ganttbar{Continuous Evaluation}{1-06}{3-12}
+\\
+
+% Publications
+\ganttbar{Paper Writing and Submission}{1-09}{3-12}
+\\
+
+\end{ganttchart}
+}
